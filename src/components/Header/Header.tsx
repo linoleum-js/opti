@@ -1,5 +1,5 @@
 
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 
 export const Header = () => {
