@@ -1,10 +1,24 @@
 
+$header-color: #25B2F8;
 
-
-.Header {
-  color: #25B2F8;
+.header {
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
-.Menu {
+.menu {
+  display: flex;
+  padding-left: 17px;
+  position: relative;
+  top: -2px;
 
+  a {
+    //color: $header-color;
+    color: #2D3E50;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 35px;
+  }
 }

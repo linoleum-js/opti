@@ -1,7 +1,14 @@
 
 
 .Wrapper {
-  margin: 0 auto;
+  //margin: 0 auto;
   max-width: 1200px;
   min-width: 700px;
+}
+
+
+.contentContainer {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
 }
