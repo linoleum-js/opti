@@ -15,10 +15,14 @@ $header-color: #25B2F8;
   top: -2px;
 
   a {
-    //color: $header-color;
     color: #2D3E50;
     text-decoration: none;
     font-size: 18px;
     margin-right: 35px;
+    display: block;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
   }
 }
