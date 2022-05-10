@@ -3,6 +3,7 @@ import styles from './App.module.scss';
 
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
+import { ScheduleForm } from './components/ScheduleForm';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <div>
           <Header />
           <div>
-            Content
+            <ScheduleForm />
           </div>
         </div>
       </div>
