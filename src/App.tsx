@@ -8,11 +8,11 @@ import { ScheduleForm } from './components/ScheduleForm';
 function App() {
   return (
     <div className={styles.Wrapper}>
-      <div className={styles.contentContainer}>
+      <div className={styles.container}>
         <Sidebar />
-        <div>
+        <div className={styles.content}>
           <Header />
-          <div>
+          <div className={styles.contentInner}>
             <ScheduleForm />
           </div>
         </div>

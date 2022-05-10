@@ -7,9 +7,16 @@
 }
 
 
-.contentContainer {
+.container {
   display: flex;
   align-items: stretch;
   min-height: 100vh;
 }
 
+.content {
+  flex-grow: 1;
+}
+
+.contentInner {
+  padding: 20px;
+}
