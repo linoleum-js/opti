@@ -5,7 +5,11 @@ import styles from './Header.module.scss';
 
 
 export const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // setTimeout(() => {
+  //   i18n.changeLanguage('ru');
+  // }, 2000);
 
   return (
     <header className={styles.header}>

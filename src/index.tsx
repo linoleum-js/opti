@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import { en } from './resources/lang';
+import { en, ru } from './resources/locales';
 
 import './index.module.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-
-// TODO separate file
 // TODO load on demand?
 i18n
   .use(initReactI18next)
@@ -19,6 +17,9 @@ i18n
     resources: {
       en: {
         translation: en
+      },
+      ru: {
+        translation: ru
       }
     },
     lng: "en",
