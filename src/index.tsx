@@ -1,25 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+import { en } from './resources/lang';
+
 import './index.module.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
 
 
+// TODO separate file
+// TODO load on demand?
 i18n
   .use(initReactI18next)
   .init({
     resources: {
       en: {
-        translation: {
-          'header.menu.forecast': 'forecast',
-          'header.menu.schedule': 'schedule',
-          'header.menu.employees': 'employees',
-          'header.menu.reports': 'reports',
-          'header.menu.settings': 'settings',
-        }
+        translation: en
       }
     },
     lng: "en",
@@ -28,8 +27,9 @@ i18n
     interpolation: {
       escapeValue: false
     }
-  }).then(() => console.log('i18n done'));
+  }).then(() => {});
 
+// TODO SSR
 ReactDOM.render(
   <React.StrictMode>
     <App />
